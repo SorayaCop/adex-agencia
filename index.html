@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- primary meta tags-->
+  <title>Adex</title>
+  <meta name="title" content="Adex">
+  <meta name="description" content="">
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images-->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+  
+<style>
+  .fixed-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(-135deg, #010101, #292929);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(242, 242, 242);
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1000;
+  }
+
+  .fixed-icon:hover {
+      background: linear-gradient(-135deg, #292929, #010101);
+  }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- #HEADER-->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" class="logo-light">
+
+        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="Adex home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Início</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Projetos</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contatos</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@adex.com.br</a>
+
+          <a href="tel:001234567890" class="contact-link">(12) 3456 - 6789</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Agendar Call</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!--#HERO -->
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Criando soluções específicas para projetos com expertise.</h1>
+
+            <p class="hero-text">
+              Somos uma empresa criativa que foca no estabelecimento de relacionamentos de longo prazo com nossos
+              clientes.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Explore Agora</a>
+
+              <a href="#" class="btn btn-outline">Fale Conosco</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="banner hero"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide para o anterior" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide para o próximo" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #SERVICE-->
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+      
+          <p class="section-subtitle" id="service-label">O que fazemos?</p>
+      
+          <h2 class="h2 section-title">
+            O serviço que oferecemos é especificamente projetado para atender às suas necessidades.
+          </h2>
+      
+          <ul class="grid-list">
+      
+            <li>
+              <div class="service-card">
+      
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+      
+                <h3 class="h4 card-title">Suporte 24/7</h3>
+      
+                <p class="card-text">
+                  Estamos sempre disponíveis para oferecer suporte e orientação a qualquer momento. Nossa equipe está pronta para ajudar a sua empresa a crescer.
+                </p>
+      
+                <a href="#" class="btn-text">
+                  <span class="span">Saiba Mais</span>
+      
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+      
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+      
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+      
+                <h3 class="h4 card-title">Pagamentos Seguros</h3>
+      
+                <p class="card-text">
+                  Garantimos a segurança nas transações, protegendo tanto você quanto seus clientes em todas as operações realizadas.
+                </p>
+      
+                <a href="#" class="btn-text">
+                  <span class="span">Saiba Mais</span>
+      
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+      
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+      
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+      
+                <h3 class="h4 card-title">Atualizações Diárias</h3>
+      
+                <p class="card-text">
+                  Fornecemos atualizações diárias sobre o desempenho e status de sua empresa, garantindo que você sempre tenha as informações mais recentes.
+                </p>
+      
+                <a href="#" class="btn-text">
+                  <span class="span">Saiba Mais</span>
+      
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+      
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+      
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+      
+                <h3 class="h4 card-title">Pesquisa de Mercado</h3>
+      
+                <p class="card-text">
+                  Realizamos pesquisas detalhadas para oferecer insights valiosos sobre o mercado e a concorrência, ajudando sua empresa a tomar decisões mais assertivas.
+                </p>
+      
+                <a href="#" class="btn-text">
+                  <span class="span">Saiba Mais</span>
+      
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+      
+              </div>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </section>
+
+      <!-- #ABOUT-->
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+      
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="sobre banner" class="w-100">
+          </figure>
+      
+          <div class="about-content">
+      
+            <p class="section-subtitle" id="about-label">Por que escolher nossa agência?</p>
+      
+            <h2 class="h2 section-title">
+              Trouxemos soluções para facilitar a vida de nossos clientes.
+            </h2>
+      
+            <ul>
+      
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+      
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+      
+                      <span class="span h5">Design Profissional</span>
+                    </button>
+                  </h3>
+      
+                  <p class="accordion-content">
+                    Nossa equipe de design cria soluções visuais impactantes que ajudam a sua marca a se destacar no mercado. Desenvolvemos materiais personalizados que comunicam a essência da sua empresa de maneira eficiente e envolvente.
+                  </p>
+      
+                </div>
+              </li>
+      
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+      
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+      
+                      <span class="span h5">Suporte de Primeira Classe</span>
+                    </button>
+                  </h3>
+      
+                  <p class="accordion-content">
+                    Oferecemos suporte contínuo para que sua empresa nunca pare. Nossa equipe está sempre pronta para resolver qualquer problema e garantir que sua operação funcione sem interrupções, com atendimento especializado a qualquer hora.
+                  </p>
+      
+                </div>
+              </li>
+      
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+      
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+      
+                      <span class="span h5">Ativos Exclusivos</span>
+                    </button>
+                  </h3>
+      
+                  <p class="accordion-content">
+                    Trabalhamos com ferramentas e recursos exclusivos para oferecer aos nossos clientes uma vantagem competitiva no mercado. Desde estratégias de marketing digital até soluções tecnológicas personalizadas, estamos prontos para atender às suas necessidades.
+                  </p>
+      
+                </div>
+              </li>
+      
+            </ul>
+      
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- #FEATURE-->
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+      
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="banner de características" class="w-100">
+          </figure>
+      
+          <div class="feature-content">
+      
+            <p class="section-subtitle" id="feature-label">Nossas Soluções</p>
+      
+            <h2 class="h2 section-title">
+              Tornamos seus gastos sem estresse, para que você tenha o controle perfeito.
+            </h2>
+      
+            <p class="section-text">
+              Em nossa agência, desenvolvemos soluções personalizadas para ajudar sua empresa a crescer com eficiência. Focamos em otimizar processos e maximizar resultados, garantindo um controle completo e transparente de todas as ações.
+            </p>
+      
+            <ul class="feature-list">
+      
+              <li>
+                <div class="feature-card">
+      
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+      
+                  <span class="span">
+                    Estratégias de marketing digital inovadoras para alavancar sua marca.
+                  </span>
+      
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+      
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+      
+                  <span class="span">
+                    Soluções personalizadas de branding para conectar sua marca com seu público.
+                  </span>
+      
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+      
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+      
+                  <span class="span">
+                    Consultoria estratégica para transformar desafios em oportunidades.
+                  </span>
+      
+                </div>
+              </li>
+      
+              <li>
+                <div class="feature-card">
+      
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+      
+                  <span class="span">
+                    Desenvolvimento de soluções tecnológicas para otimizar seus processos internos.
+                  </span>
+      
+                </div>
+              </li>
+      
+            </ul>
+      
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- #STATS-->
+      <section class="stats" aria-label="nossas estatísticas">
+        <div class="container">
+      
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+      
+            <li>
+              <p class="card-text">
+                <span class="h1">7518</span>
+      
+                <span class="span">Projetos Concluídos</span>
+              </p>
+            </li>
+      
+            <li>
+              <p class="card-text">
+                <span class="h1">3472</span>
+      
+                <span class="span">Clientes Satisfeitos</span>
+              </p>
+            </li>
+      
+            <li>
+              <p class="card-text">
+                <span class="h1">2184</span>
+      
+                <span class="span">Colaboradores Especializados</span>
+              </p>
+            </li>
+      
+            <li>
+              <p class="card-text">
+                <span class="h1">4523</span>
+      
+                <span class="span">Prêmios Recebidos</span>
+              </p>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </section>
+   
+      <!-- #PROJECT-->
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+      
+          <p class="section-subtitle" id="project-label">Estudos de Caso</p>
+      
+          <h2 class="h2 section-title">
+            Confira alguns dos nossos projetos incríveis com ideias criativas e um design excepcional.
+          </h2>
+      
+          <ul class="grid-list">
+  
+            <li>
+              <div class="project-card">
+            
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+            
+                <div class="card-content">
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Desenvolvimento de Sistema de Gestão</a>
+                  </h3>
+            
+                  <p class="card-text">
+                    Criamos uma plataforma completa para o gerenciamento de processos internos de empresas, otimizando tempo e recursos com ferramentas intuitivas.
+                  </p>
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+            
+                      <time class="meta-text" datetime="">01 Abr 2025</time>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+            
+                      <span class="meta-text">Codificação</span>
+                    </li>
+            
+                  </ul>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="project-card">
+            
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+            
+                <div class="card-content">
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Implementação de Ferramentas de Colaboração</a>
+                  </h3>
+            
+                  <p class="card-text">
+                    Implantamos ferramentas colaborativas para melhorar a comunicação e produtividade da equipe, facilitando o trabalho remoto e a gestão de projetos.
+                  </p>
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+            
+                      <time class="meta-text" datetime="">01 Abr 2025</time>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+            
+                      <span class="meta-text">Espaço de Trabalho</span>
+                    </li>
+            
+                  </ul>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="project-card">
+            
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+            
+                <div class="card-content">
+            
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Transformação Digital para Pequenos Negócios</a>
+                  </h3>
+            
+                  <p class="card-text">
+                    Ajudamos pequenos empresários a implementarem soluções digitais inovadoras, aumentando a eficiência e alcance de seus negócios.
+                  </p>
+            
+                  <ul class="card-meta-list">
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+            
+                      <time class="meta-text" datetime="">01 Abr 2025</time>
+                    </li>
+            
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+            
+                      <span class="meta-text">Reunião</span>
+                    </li>
+            
+                  </ul>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+          </ul>
+          
+      
+        </div>
+      </section>
+      
+      <!-- #CTA-->
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+      
+          <h2 class="h2 section-title">
+            Junte-se à nossa comunidade utilizando nossos serviços e faça o seu negócio crescer.
+          </h2>
+      
+          <a href="#" class="btn btn-primary">Entrar em Contato</a>
+      
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+   <!-- #FOOTER-->
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+        </a>
+
+        <p class="footer-text">
+          &copy; <script>document.write(new Date().getFullYear());</script> Desenvolvido por <br> 
+          <a href="https://sorayacop.com.br"><b>Soraya Cop</b></a>
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Entre em Contato</p>
+        </li>
+      
+        <li>
+          <address class="footer-text">
+            Cidade Alegre - Bairro Feliz - 192883
+          </address>
+        </li>
+      
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">info@adex.com.br</a>
+        </li>
+      
+        <li>
+          <a href="tel:001234567890" class="footer-link">(12) 3456 - 7890</a>
+        </li>
+      
+      </ul>
+      
+      <ul class="footer-list">
+      
+        <li>
+          <p class="h4 footer-list-title">Saiba Mais</p>
+        </li>
+      
+        <li>
+          <a href="#" class="footer-link">Sobre Nós</a>
+        </li>
+      
+        <li>
+          <a href="#" class="footer-link">Nossa História</a>
+        </li>
+      
+        <li>
+          <a href="#" class="footer-link">Projetos</a>
+        </li>
+      
+        <li>
+          <a href="#" class="footer-link">Termos de Uso</a>
+        </li>
+      
+        <li>
+          <a href="#" class="footer-link">Política de Privacidade</a>
+        </li>
+      
+      </ul>
+      
+      <div class="footer-list">
+      
+        <p class="h4 footer-list-title">Nossa Newsletter</p>
+      
+        <p class="footer-text">
+          Assine nossa newsletter para receber as últimas notícias e ofertas diretamente no seu e-mail.
+        </p>
+      
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Endereço de E-mail" required class="input-field">
+      
+          <button type="submit" class="submit-btn">Inscrever-se</button>
+        </form>
+      
+      </div>
+      
+
+    </div>
+  </footer>
+  <!-- Icon FIXO -->
+  <a href="https://www.sorayacop.com.br/"><button class="fixed-icon">
+    <ion-icon name="arrow-undo-outline"></ion-icon>
+</button></a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
